@@ -51,6 +51,8 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -A'
 alias cls="clear"
 alias gp="git pull"
+alias gs="git status"
+alias s="sudo"
 alias gf="git fetch"
 alias lt='colorls --tree'
 alias update='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get autoremove'
@@ -67,3 +69,5 @@ LS_COLORS="ow=01;36;40" && export LS_COLORS
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
