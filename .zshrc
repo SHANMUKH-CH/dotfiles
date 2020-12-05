@@ -5,9 +5,8 @@ fi
 export ZSH="/home/terrorblade/.oh-my-zsh"
 
 #git handler function
-function omg() {
-	    git add "$1"
-	        git commit -a -m "$2"
+function shipit(){
+	        git commit -a -m "$1"
 		    git push
 	    }
 
@@ -49,6 +48,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -A'
+alias ga='git add'
 alias cls="clear"
 alias gp="git pull"
 alias gs="git status"
