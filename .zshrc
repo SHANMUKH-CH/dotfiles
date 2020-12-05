@@ -5,8 +5,8 @@ fi
 export ZSH="/home/terrorblade/.oh-my-zsh"
 
 function lazygit() {
-	    git add .
-	        git commit -a -m "$1"
+	    git add "$1"
+	        git commit -a -m "$2"
 		    git push
 	    }
 # Set name of the theme to load --- if set to "random", it will
