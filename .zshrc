@@ -105,7 +105,7 @@ source $(dirname $(gem which colorls))/yaml
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -lA --sd'
-alias c="clear"
+alias cls="clear"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
