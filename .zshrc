@@ -1,14 +1,7 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH="/home/terrorblade/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -74,11 +67,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions shrink-path python ubuntu extract sudo)
+plugins=(git zsh-autosuggestions shrink-path python ubuntu extract sudo z)
 
 source $ZSH/oh-my-zsh.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
-source $(dirname $(gem which colorls))/yaml
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,8 +100,8 @@ alias ls='colorls'
 alias cls="clear"
 alias ga="git add"
 alias gc="git commit -m"
-alias gp="git push"
-alias gpp="git pull"
+alias gg="git push"
+alias gp="git pull"
 alias gf="git fetch"
 alias lt='colorls --tree'
 alias update='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get autoremove'
