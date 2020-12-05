@@ -4,6 +4,11 @@ fi
 
 export ZSH="/home/terrorblade/.oh-my-zsh"
 
+function lazygit() {
+	    git add .
+	        git commit -a -m "$1"
+		    git push
+	    }
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -67,7 +72,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions shrink-path python ubuntu extract sudo z)
+plugins=(git zsh-autosuggestions shrink-path python ubuntu extract sudo)
 
 source $ZSH/oh-my-zsh.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
