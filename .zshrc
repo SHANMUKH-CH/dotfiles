@@ -4,7 +4,7 @@ fi
 
 export ZSH="/home/terrorblade/.oh-my-zsh"
 
-function lazygit() {
+function omg() {
 	    git add "$1"
 	        git commit -a -m "$2"
 		    git push
