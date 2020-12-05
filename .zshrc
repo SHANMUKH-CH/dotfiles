@@ -101,7 +101,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='colorls'
+alias ls='colorls -A'
 alias cls="clear"
 alias ga="git add"
 alias gc="git commit -m"
