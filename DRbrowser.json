@@ -1,0 +1,62 @@
+{
+    "applyToListedOnly": false,
+    "automation": "",
+    "changeBrowserTheme": false,
+    "customThemes": [],
+    "enableForPDF": false,
+    "enableForProtectedPages": false,
+    "enabled": true,
+    "location": {
+        "latitude": null,
+        "longitude": null
+    },
+    "notifyOfNews": false,
+    "presets": [],
+    "previewNewDesign": true,
+    "siteList": [
+        "aumsam.amrita.edu"
+    ],
+    "siteListEnabled": [],
+    "syncSettings": true,
+    "syncSitesFixes": true,
+    "theme": {
+        "mode": 1,
+        "brightness": 100,
+        "contrast": 100,
+        "grayscale": 0,
+        "sepia": 0,
+        "useFont": true,
+        "fontFamily": "Cascadia Code",
+        "textStroke": 0,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#011627",
+        "darkSchemeTextColor": "#e8e6e3",
+        "lightSchemeBackgroundColor": "#dcdad7",
+        "lightSchemeTextColor": "#181a1b",
+        "scrollbarColor": "#1B5A6D",
+        "selectionColor": "#1d3b53",
+        "styleSystemControls": true,
+        "foreground": "#D6DEEB",
+        "black": "#011627",
+        "blue": "#82AAFF",
+        "cyan": "#21C7A8",            
+        "green": "#22DA6E",
+        "purple": "#C792EA",
+        "red": "#EF5350",
+        "white": "#FFFFFF",
+        "yellow": "#ADDB67",
+        "brightBlack": "#969696",
+        "brightBlue": "#82AAFF",
+        "brightCyan": "#7FDBCA",
+        "brightGreen": "#22DA6E",
+        "brightPurple": "#C792EA",
+        "brightRed": "#EF5350",
+        "brightWhite": "#FFFFFF",
+        "brightYellow": "#FFEB95"
+        },
+    "time": {
+        "activation": "18:00",
+        "deactivation": "9:00"
+    }
+}
