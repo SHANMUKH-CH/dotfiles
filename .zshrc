@@ -9,6 +9,9 @@ function shipit(){
 	        git commit -a -m "$1"
 		    git push
 	    }
+function run(){
+	powershell.exe Start "$1"
+}
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -58,7 +61,6 @@ alias lt='colorls -A --tree'
 alias update='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get autoremove'
 alias shanrepos='cd /mnt/d/edu/GitRepos'
 alias mtech='cd /mnt/d/edu/Mtech2020'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
