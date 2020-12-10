@@ -40,7 +40,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 
 #plugins
-plugins=(git zsh-autosuggestions shrink-path python ubuntu extract sudo)
+plugins=(docker git zsh-autosuggestions shrink-path python ubuntu extract sudo)
 source $ZSH/oh-my-zsh.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
 
