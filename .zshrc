@@ -52,7 +52,7 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -A'
 alias ga='git add'
-alias cls="clear"
+alias cc="clear"
 alias gp="git pull"
 alias gs="git status"
 alias s="sudo"
@@ -61,6 +61,8 @@ alias lt='colorls -A --tree'
 alias update='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get autoremove'
 alias shanrepos='cd /mnt/d/edu/GitRepos'
 alias mtech='cd /mnt/d/edu/Mtech2020'
+alias b='cd ..'
+alias c='cd'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
