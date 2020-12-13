@@ -13,6 +13,13 @@ function run(){
 	powershell.exe Start "$1"
 }
 
+function gsoft(){
+	sudo apt-get install "$1"
+}
+
+function remove(){
+}
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to automatically update without prompting.
@@ -63,6 +70,7 @@ alias shanrepos='cd /mnt/d/edu/GitRepos'
 alias mtech='cd /mnt/d/edu/Mtech2020'
 alias b='cd ..'
 alias c='cd'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
