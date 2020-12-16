@@ -18,6 +18,11 @@ function gsoft(){
 }
 
 function remove(){
+	sudo apt-get remove "$1"
+}
+
+function mkcdir(){
+    mkdir -p -- "$1" && cd -P -- "$1"
 }
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
