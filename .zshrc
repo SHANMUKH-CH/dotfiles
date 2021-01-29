@@ -87,4 +87,7 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
 
+#display
+export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
