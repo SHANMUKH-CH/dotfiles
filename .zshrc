@@ -9,18 +9,20 @@ function shipit(){
 	        git commit -a -m "$1"
 		    git push
 	    }
+#powershell handler function
 function run(){
 	powershell.exe Start "$1"
 }
 
+#installer
 function gsoft(){
 	sudo apt-get install "$1"
 }
-
+#uninstaller
 function remove(){
 	sudo apt-get remove "$1"
 }
-
+#make dir and auto cd
 function mkcdir(){
     mkdir -p -- "$1" && cd -P -- "$1"
 }
@@ -86,6 +88,10 @@ LS_COLORS="ow=01;36;40" && export LS_COLORS
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
+kitty + complete setup zsh | source /dev/stdin
+#nvm
+export NVM_DIR="/home/terrorblade/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 #display
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
