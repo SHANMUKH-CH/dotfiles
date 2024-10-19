@@ -16,7 +16,7 @@ in pkgs.mkShell {
         pkgs.meslo-lg
         pkgs.git
         pkgs.curl
-        pkgs.vscode
+        pkgs.neovim
     ];
     shellHook = ''
         fc-cache -f -v

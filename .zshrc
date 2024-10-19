@@ -29,6 +29,10 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
 
+# binded keys for zsh-history-substring-search
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
+
 # Add in snippets plugins
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo

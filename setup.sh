@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # install the nix package manager: https://nixos.org/
 if ! command -v nix 2>/dev/null; then

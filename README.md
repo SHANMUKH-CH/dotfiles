@@ -9,7 +9,7 @@
 - meslo-lg
 - git
 - curl
-- vscode
+- neovim
 
 ## zsh plugins
 
@@ -40,5 +40,5 @@
 2. Run the setup script:
 
     ```sh
-    chmod +x setup.sh && ./setup.sh
+    bash setup.sh
     ```
