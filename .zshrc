@@ -82,14 +82,8 @@ setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 
-# some common functions/aliases. TODO: move to a common sh file
-alias ll='ls -alF --color=auto'
-alias ls='ls -CFA --color=auto'
-alias c='clear'
-
-function mkcd() {
-  mkdir -vp "$1" && cd "$1"
-}
-
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
+
+# load common functions/aliases from ~/dotfiles/scripts/common.sh
+source ~/common.sh

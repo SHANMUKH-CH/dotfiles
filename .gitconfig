@@ -3,6 +3,12 @@
 [user]
 	email = shanmukh02.ch@gmail.com
 	name = SHANMUKH-CH
-	signingkey = A9ADBD01CFE109F1
+	signingkey = A6926ECA5F876CC7
 [commit]
 	gpgsign = true
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential

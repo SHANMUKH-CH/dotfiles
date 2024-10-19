@@ -34,6 +34,7 @@ in pkgs.mkShell {
         ln -sf $PWD/.zshrc $HOME/.zshrc
         ln -sf $PWD/.p10k.zsh $HOME/.p10k.zsh
         ln -sf $PWD/.gitconfig $HOME/.gitconfig
+        ln -sf $PWD/scripts/common.sh $HOME/
 
         # Start zsh
         exec $(which zsh)
