@@ -30,9 +30,10 @@ in pkgs.mkShell {
             git clone https://github.com/zdharma-continuum/zinit.git "$HOME/.local/share/zinit/zinit.git"
         fi
 
-        # Link .zshrc and .p10k.zsh from the parent directory
+        # Link config files from the parent directory
         ln -sf $PWD/.zshrc $HOME/.zshrc
         ln -sf $PWD/.p10k.zsh $HOME/.p10k.zsh
+        ln -sf $PWD/.gitconfig $HOME/.gitconfig
 
         # Start zsh
         exec $(which zsh)

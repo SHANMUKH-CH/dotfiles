@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+[user]
+	email = shanmukh02.ch@gmail.com
+	name = SHANMUKH-CH
+	signingkey = A9ADBD01CFE109F1
+[commit]
+	gpgsign = true
