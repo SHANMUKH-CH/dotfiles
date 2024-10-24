@@ -12,11 +12,8 @@ in pkgs.mkShell {
         pkgs.zsh
         pkgs.fzf
         pkgs.zoxide
-        pkgs.cascadia-code
-        pkgs.meslo-lg
         pkgs.git
         pkgs.curl
-        pkgs.neovim
     ];
     shellHook = ''
         fc-cache -f -v
@@ -31,9 +28,8 @@ in pkgs.mkShell {
         fi
 
         # Link config files from the parent directory
-        ln -sf $PWD/.zshrc $HOME/.zshrc
-        ln -sf $PWD/.p10k.zsh $HOME/.p10k.zsh
-        ln -sf $PWD/.gitconfig $HOME/.gitconfig
+        ln -sf $PWD/.zshrc $HOME/
+        ln -sf $PWD/.p10k.zsh $HOME/
         ln -sf $PWD/scripts/common.sh $HOME/
 
         # Start zsh

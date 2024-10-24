@@ -34,8 +34,8 @@ KEY_ID=$(gpg --list-secret-keys --keyid-format=long | awk -v name="${GITHUB_ORG}
 git config --global user.signingkey "$KEY_ID"
 git config --global commit.gpgsign true
 
-# Export the public key
-PUBLIC_KEY=$(gpg --armor --export "$KEY_ID")
+# Export the public key in ASCII-armored format
+gpg --armor --export "$KEY_ID" > gpg_public_key.asc
 
 # Retrieve the existing GPG key ID from GitHub
 GITHUB_KEY_ID=$(gh gpg-key list | grep -B 1 "$EMAIL" | head -n 1 | awk '{print $1}')
@@ -43,9 +43,10 @@ GITHUB_KEY_ID=$(gh gpg-key list | grep -B 1 "$EMAIL" | head -n 1 | awk '{print $
 # Check if the local key ID matches the GitHub key ID
 if [ "$LOCAL_KEY_ID" != "$GITHUB_KEY_ID" ]; then
   # Update the GPG key on GitHub
-  echo "$PUBLIC_KEY" > gpg_public_key.asc
   gh gpg-key add gpg_public_key.asc
-  rm gpg_public_key.asc
 fi
+
+# Clean up the exported key file
+rm gpg_public_key.asc
 
 exit 0
